@@ -20,7 +20,7 @@
 
     require_once(dirname(__FILE__) . '/FreemiusBase.php');
 
-    define('FS_SDK__USER_AGENT', 'fs-php-' . Freemius_Api_Base::VERSION);
+    define('FS_SDK__USER_AGENT', 'fs-php-' . Freemius_Api_Base_Core::VERSION);
 
     $curl_version = curl_version();
 
@@ -35,7 +35,7 @@
         return;
     }
 
-    class Freemius_Api extends Freemius_Api_Base
+    class Freemius_Api extends Freemius_Api_Base_Core
     {
         /**
          * Default options for curl.
